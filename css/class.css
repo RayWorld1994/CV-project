@@ -1,0 +1,14 @@
+.bold {
+	font-weight: 700;
+}
+
+.title {
+	font-size: 32px;
+}
+
+.text-blue {
+    color: #004494;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 900;
+}
