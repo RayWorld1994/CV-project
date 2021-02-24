@@ -6,9 +6,32 @@
 	font-size: 32px;
 }
 
+.sub-title {
+    font-size: 20px;
+}
+
 .text-blue {
-    color: #004494;
+    color: var(--blue);
     text-transform: capitalize;
     font-size: 12px;
     font-weight: 900;
+}
+
+.justify-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-text {
+    font-size: 10px;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+.inline {
+    display: inline;
 }
