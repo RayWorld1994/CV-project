@@ -115,6 +115,7 @@ a {
   max-width: 1200px;
   margin: auto;
   min-height: 100vh;
+  box-shadow: 1px 0px 9px 0px black, -1px 0px 9px 0px black;
 }
 
 aside {
@@ -202,41 +203,18 @@ header {
   font-size: 20px;
 }
 
+.content {
+  padding: 30px;
+}
+
 .content span {
   font-weight: 400;
 }
 
-.prueba-z {
-  background-color: antiquewhite;
-  width: 260px;
-  height: 240px;
-  position: relative;
+.content section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
 }
 
-.prueba-z img {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 200px;
-  height: auto;
-}
-
-.prueba-z p,
-.prueba-z h3 {
-  position: relative;
-  z-index: 1;
-}
-
-.testing-float {
-  padding: 25px;
-  border: solid 1px var(--blue);
-}
-
-.testing-float img {
-  height: 100%;
-  object-fit: cover;
-  float: right;
-}
