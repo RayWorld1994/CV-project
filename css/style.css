@@ -218,3 +218,9 @@ header {
   margin: 20px 0;
 }
 
+.level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
