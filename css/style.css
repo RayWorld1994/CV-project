@@ -115,8 +115,6 @@ ul {
 body {
   background-color: #777777;
   color: var(--color-text);
-  padding: 10px;
-  width: fit-content;
 }
 
 hr {
@@ -126,6 +124,12 @@ hr {
 
 a {
   color: var(--color-text);
+}
+
+.wrapper {
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
 }
 
 .container {
