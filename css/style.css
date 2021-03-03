@@ -135,7 +135,7 @@ a {
 .container {
   display: flex;
   max-width: 1000px;
-  min-width: 800px;
+  /* min-width: 800px; */
   margin: auto;
   min-height: 100vh;
   box-shadow: 1px 0px 9px 0px black, -1px 0px 9px 0px black;
@@ -145,6 +145,8 @@ aside {
   background-color: var(--gray-light);
   flex: 2 5;
   padding: 30px 0 0 0;
+  display: flex;
+  flex-direction: column;
 }
 main {
   width: 100%;
@@ -239,7 +241,7 @@ header {
 .content section {
   margin: 20px 0;
 }
-.content section .title{
+.content section .title {
   margin: 5px 0;
 }
 
@@ -248,14 +250,13 @@ header {
   grid-template-columns: 20px 1fr;
 }
 
-.section .title{
+.section .title {
   grid-column: span 2;
 }
 
 .line-dotted {
   height: 100%;
   border-left: solid var(--blue) 3px;
-  
 }
 
 .level {
@@ -264,6 +265,7 @@ header {
   list-style: none;
   gap: 10px;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .other-languages {
@@ -278,17 +280,44 @@ header {
   margin: 5px 0;
 }
 
-.list-info h3{
+.list-info h3 {
   position: relative;
 }
 
-.list-info h3::before{
+.list-info h3::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: var(--blue);
   left: -20px;
   transform: translate(-50%, 35%);
+}
+
+@media all and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  aside {
+    flex-direction: row;
+  }
+
+  header {
+    flex: 2;
+  }
+  .contact {
+    flex: 3;
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 600px) {
+  aside {
+    flex-direction: column;
+  }
+
+  .contact {
+    padding: 20px;
+  }
 }
