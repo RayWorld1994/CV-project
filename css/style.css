@@ -309,6 +309,11 @@ header {
   .contact {
     flex: 3;
     padding: 0;
+    margin: 0;
+  }
+
+  .content {
+    padding: 0 25px;
   }
 }
 
@@ -319,5 +324,13 @@ header {
 
   .contact {
     padding: 20px;
+  }
+
+  .wrapper {
+    padding: 5px;
+  }
+
+  .list {
+    padding-left: 20px;
   }
 }

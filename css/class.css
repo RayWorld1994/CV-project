@@ -1,49 +1,49 @@
 .bold {
-	font-weight: 700;
-    color: var(--gray-dark);
+  font-weight: 700;
+  color: var(--gray-dark);
 }
 
 .title {
-	font-size: 25px;
+  font-size: 25px;
 }
 
 .sub-title {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .text-blue {
-    color: var(--blue);
-    text-transform: capitalize;
-    font-size: 12px;
-    font-weight: 900;
+  color: var(--blue);
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 900;
 }
 
 .justify-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .small-text {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .bolder {
-    font-weight: 900;
-    color: var(--gray-dark);
-
+  font-weight: 900;
+  color: var(--gray-dark);
+  
 }
 
 .list {
-    padding-left: 40px;
-    margin: 10px;
+  padding-left: 40px;
+  margin: 10px;
 }
 
 .list li {
-    text-align: justify;
+  text-align: justify;
 }
 
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
