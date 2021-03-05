@@ -260,13 +260,14 @@ header {
 }
 
 .level {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   list-style: none;
   gap: 10px;
   text-align: center;
-  flex-wrap: wrap;
+  align-items: center;
 }
+
 
 .other-languages {
   display: grid;
