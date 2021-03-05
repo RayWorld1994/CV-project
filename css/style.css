@@ -260,13 +260,14 @@ header {
 }
 
 .level {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   list-style: none;
   gap: 10px;
   text-align: center;
-  flex-wrap: wrap;
+  align-items: center;
 }
+
 
 .other-languages {
   display: grid;
@@ -309,6 +310,11 @@ header {
   .contact {
     flex: 3;
     padding: 0;
+    margin: 0;
+  }
+
+  .content {
+    padding: 0 25px;
   }
 }
 
@@ -319,5 +325,13 @@ header {
 
   .contact {
     padding: 20px;
+  }
+
+  .wrapper {
+    padding: 5px;
+  }
+
+  .list {
+    padding-left: 20px;
   }
 }
