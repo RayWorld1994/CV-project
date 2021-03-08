@@ -1,97 +1,10 @@
 @charset "UTF-8";
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  color: #757575;
-}
-
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 :root {
@@ -106,6 +19,7 @@ html {
   font-family: "Lato", sans-serif;
   font-size: 15px;
   line-height: 1.4;
+  color: var(--gray);
 }
 
 ul {
@@ -114,7 +28,6 @@ ul {
 
 body {
   background-color: #777777;
-  color: var(--color-text);
 }
 
 hr {
@@ -127,9 +40,11 @@ a {
 }
 
 .wrapper {
+  position: relative;
   padding: 10px;
   width: fit-content;
   margin: auto;
+  animation: 300ms ease-in forwards fadeInLeft;
 }
 
 .container {
@@ -159,6 +74,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: 300ms ease-in-out 200ms both zoomIn;
 }
 
 .profile {
@@ -207,6 +123,7 @@ header {
 .contact {
   margin: 15px 10px;
   padding: 20px;
+  animation: 300ms ease-in-out 300ms both zoomIn;
 }
 
 .contact-list {
@@ -239,6 +156,7 @@ header {
 }
 
 .content section {
+  position: relative;
   margin: 20px 0;
 }
 .content section .title {
@@ -267,7 +185,6 @@ header {
   text-align: center;
   align-items: center;
 }
-
 
 .other-languages {
   display: grid;
@@ -300,13 +217,16 @@ header {
   .container {
     flex-direction: column;
   }
+
   aside {
+    padding-bottom: 10px;
     flex-direction: row;
   }
 
   header {
     flex: 2;
   }
+
   .contact {
     flex: 3;
     padding: 0;
@@ -317,10 +237,10 @@ header {
     padding: 0 25px;
   }
 }
-
 @media all and (max-width: 600px) {
   aside {
     flex-direction: column;
+    padding-bottom: 0;
   }
 
   .contact {
@@ -334,4 +254,62 @@ header {
   .list {
     padding-left: 20px;
   }
+}
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0.5);
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.content > section {
+  animation: 300ms ease-out backwards fadeInRight;
+}
+
+.content section:nth-child(1) {
+  animation-delay: 500ms;
+}
+.content section:nth-child(2) {
+  animation-delay: 600ms;
+}
+.content section:nth-child(3) {
+  animation-delay: 700ms;
+}
+.content section:nth-child(4) {
+  animation-delay: 800ms;
+}
+.content section:nth-child(5) {
+  animation-delay: 900ms;
+}
+.content section:nth-child(6) {
+  animation-delay: 1000ms;
+}
+.content section:nth-child(7) {
+  animation-delay: 1100ms;
 }
